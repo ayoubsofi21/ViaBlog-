@@ -6,46 +6,95 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>ViaBlog</title>
 </head>
-<body>
+<body class="container m-0 p-0">
  <header>
-    <section class="header-container m-2 flex gap-x-85">
+    <section class="header-container m-4 flex justify-between">
         <div class="menu w-4 h-4"><a href="#"><img src="images/menu.png" alt=""></a></div>
         <div class="recherche w-4 h-4"><a href="#"><img src="images/search.png" alt=""></a></div>
     </section>
  </header>
 
- <main class="main m-2">
-    <h1>Blogger Of The Week</h1>
-    <div class="story flex justify-around">
-        <div class="user">
-            <img class="picture w-10 h-10 rounded-full border-red-500" src="/images/imgstory.webp" alt="story1">
+ <main class="main m-4">
+    <h1 class="title text-2xl mt-2 mb-2">Blogger Of The Week</h1>
+        <section class="story flex gap-4 overflow-x-auto w-full p-4">
+            <div class="user w-15 h-15 rounded-full border-2 border-green-500 shrink-0">
+                <img class="picture w-14 h-14 rounded-full " src="/images/imgstory.webp" alt="story1">
+                <p class="w-4 c-red">josefina Hudson
+                </p>
+            </div>
+        <div class="user shrink-0">
+            <img class="picture w-14 h-14 rounded-full border-red-500  " src="/images/imgstory.webp" alt="story1">
             <p class="w-4 c-red">josefina Hudson
             </p>
         </div>
-        <div class="user">
-            <img class="picture w-10 h-10 rounded-full border-red-500" src="/images/imgstory.webp" alt="story1">
+        <div class="user shrink-0">
+            <img class="picture w-14 h-14 rounded-full border-red-500" src="/images/imgstory.webp" alt="story1">
             <p class="w-4 c-red">josefina Hudson
             </p>
         </div>
-        <div class="user">
-            <img class="picture w-10 h-10 rounded-full border-red-500" src="/images/imgstory.webp" alt="story1">
+        <div class="user shrink-0">
+            <img class="picture w-14 h-14 rounded-full border-red-500" src="/images/imgstory.webp" alt="story1">
             <p class="w-4 c-red">josefina Hudson
             </p>
         </div>
-        <div class="user">
-            <img class="picture w-10 h-10 rounded-full border-red-500" src="/images/imgstory.webp" alt="story1">
+        <div class="user shrink-0" >
+            <img class="picture w-14 h-14 rounded-full border-red-500" src="/images/imgstory.webp" alt="story1">
             <p class="w-4 c-red">josefina Hudson
             </p>
         </div>
-        <div class="user">
-            <img class="picture w-10 h-10 rounded-full border-red-500" src="/images/imgstory.webp" alt="story1">
+        <div class="user shrink-0">
+            <img class="picture w-14 h-14 rounded-full border-red-500" src="/images/imgstory.webp" alt="story1">
             <p class="w-4 c-red">josefina Hudson
             </p>
         </div>
-    </div>
- </main>
- <footer>
-
- </footer>
+    </section>
+    <h2 class="Read m-4">What Do You Want To Read?</h2>
+    <section class="card-container flex items-center justify-between gap-3  overflow-x-auto">
+        <div class="card1 w-12  h-9  rounded-lg bg-green-600 flex justify-center items-center">
+            <p class="text-white p-4">All</p>
+        </div>
+        <div class="card1 w-12  h-9 p-4  rounded-lg border-1 flex justify-center items-center">
+            <p>Forest</p>
+        </div>
+        
+        <div class="card1 w-12  h-9 p-4  rounded-lg border-1 flex justify-center items-center">
+            <p> Beach</p>
+        </div>
+       
+        <div class="card1 w-12  h-9 p-4  rounded-lg border-1 flex justify-center items-center">
+            <p>  River </p>
+        </div>
+        <div class="card1 w-20  h-9 p-4  rounded-lg border-1 flex justify-center items-center">
+            <p> Mountains</p>
+        </div>
+        <div class="card1 w-20  h-9 p-4  rounded-lg border-1 flex justify-center items-center">
+            <p>Road</p>
+        </div>
+        
+    </section>
+    <section class="allbody rounded-b-[10px] shadow-sm rounded-t-[20px] w-[100%]">
+        <div class="imghome mt-4">
+            <img class="rounded-t-[15px]" src="https://static.vecteezy.com/system/resources/thumbnails/049/855/328/small/nature-background-high-resolution-wallpaper-for-a-serene-and-stunning-view-photo.jpg" alt="image-home">
+        </div>
+        <div class="localClockkm flex  justify-between m-2">
+            <div class="font-bold">Yellow River</div>
+            <section class="flex justify-between text-red items-center gap-4">
+                <div class="flex justify-between  items-center ">
+                    <img src="images/location.png" class="w-3 h-3 " alt="location"><p class="text-gray-500">china</p>
+                </div>
+                <div class="flex justify-between items-center">
+                    <img src="images/clock.png" class="w-3 h-3 text-gray-500" alt="clock"><p class="text-gray-500">15 min</p>
+                </div>
+                <div class="flex justify-between items-center">
+                    <img src="images/eye.png" class="w-3 h-3 text-gray-500" alt="eye"><p class="text-gray-500">12K</p>
+                </div>
+               
+                
+                
+            </section>
+        </div>
+        <p>by lan Jacobson</p>
+    </section>
+   
 </body>
 </html>
