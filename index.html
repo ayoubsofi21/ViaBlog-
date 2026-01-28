@@ -14,7 +14,7 @@
     </section>
  </header>
 
- <main class="main m-4">
+ <main class="main m-4 h-[110vh]">
     <h1 class="title text-2xl mt-2 mb-2">Blogger Of The Week</h1>
         <section class="story flex gap-4 overflow-x-auto w-full p-4">
             <div class="user w-15 h-15 rounded-full border-2 border-green-500 shrink-0">
@@ -74,7 +74,9 @@
     </section>
     <section class="allbody rounded-b-[10px] shadow-sm rounded-t-[20px] w-[100%]">
         <div class="imghome mt-4">
+            <a href="details.html">
             <img class="rounded-t-[15px]" src="https://static.vecteezy.com/system/resources/thumbnails/049/855/328/small/nature-background-high-resolution-wallpaper-for-a-serene-and-stunning-view-photo.jpg" alt="image-home">
+            </a>
         </div>
         <div class="localClockkm flex  justify-between m-2">
             <div class="font-bold">Yellow River</div>
@@ -93,31 +95,37 @@
                 
             </section>
         </div>
-        <p>by lan Jacobson</p>
+        <p class="p-2">by lan Jacobson</p>
     </section>
-    <section class="flex gap-1">
-        <img class="w-45 rounded-t-[15px]" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMgv22lTX2EbquPv5G0b6M8tnJ-y1GPkGxNw&s" alt="img">
+    <section class="flex gap-1 relative mt-2">
+        <img class="w-45 rounded-t-[15px] h-50" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMgv22lTX2EbquPv5G0b6M8tnJ-y1GPkGxNw&s" alt="img">
         <img  class="w-45 rounded-t-[15px]"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6szDKxK_Q87UB1WPu6iB-hPPczhxN_NlbKA&s" alt="img">
+          <section class="uploads absolute top-2 right-0  w-30 h-30  bg-green-600 rounded-full flex flex-col items-center justify-center">
+            <img  class="w-20 h-20" src="/images/uploads.png" alt="uploadsImg">
+            <p class="text-white font-bold flex flex-col items-center justify-center">Upload</p>
+          </section>
     </section>
+    
  </main>
  <footer class="fixed bottom-0 left-0 right-0 w-full rounded-full bg-white shadow-t-lg py-2  ">
     <div class="footer flex items-center justify-around">
-        <div>
-             <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 24 24">
-            <path d="M 12 2.0996094 L 1 12 L 4 12 L 4 21 L 11 21 L 11 15 L 13 15 L 13 21 L 20 21 L 20 12 L 23 12 L 12 2.0996094 z M 12 4.7910156 L 18 10.191406 L 18 11 L 18 19 L 15 19 L 15 13 L 9 13 L 9 19 L 6 19 L 6 10.191406 L 12 4.7910156 z"></path>
-        </svg>
+        <div class="bg-green-600 rounded-[10px]">
+            <a class="flex flex-col items-center" href="index.html">
+                <img class="w-13 p-4" src="/images/home.png" alt="home">
+            </a>
+             
         </div>
        
-        <div class="location">
-            <a href="#"><img class="w-6" src="/images/icons8-location-50.png" alt="location"></a>
+        <div class="location ">
+            <a href="#" class="flex flex-col items-center"><img class="w-6 h-6" src="/images/icons8-location-50.png" alt="location"></a>
             <p>location</p>
         </div>
         <div class="wishlist">
-            <a href="#"><img class="w-6 h-6" src="/images/wishlist.png" alt="wishlist"></a>
+            <a href="#"  class="flex flex-col items-center"><img class="w-6 h-6" src="/images/wishlist.png" alt="wishlist"></a>
             Wishlist
         </div>
         <div class="profile">
-           <a href="#"><img class="w-6 h-6" src="/images/profile.png" alt="wishlist"></a> 
+           <a href="profil.html"  class="flex flex-col items-center"><img class="w-6 h-6" src="/images/user.png" alt="wishlist"></a> 
            Profile
         </div>
     </div>
