@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detail Page</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    /> 
 </head>
 <body>
     <main class="bg-gray-50">
@@ -56,25 +60,24 @@
     </main>
     <footer class="fixed bottom-0 left-0 right-0 w-full rounded-full bg-white shadow-t-lg py-2  ">
     <div class="footer flex items-center justify-around">
-        <div class="bg-green-600 rounded-[10px]">
-            <a class="flex flex-col items-center" href="index.html">
-                <img class="w-13 p-4" src="/images/home.png" alt="home">
-            </a>
-             
-        </div>
-       
-        <div class="location ">
-            <a href="#" class="flex flex-col items-center"><img class="w-6 h-6" src="/images/icons8-location-50.png" alt="location"></a>
-            <p>location</p>
-        </div>
-        <div class="wishlist">
-            <a href="#"  class="flex flex-col items-center"><img class="w-6 h-6" src="/images/wishlist.png" alt="wishlist"></a>
-            Wishlist
-        </div>
-        <div class="profile">
-           <a href="profil.html"  class="flex flex-col items-center"><img class="w-6 h-6" src="/images/user.png" alt="wishlist"></a> 
-           Profile
-        </div>
+        <a href="index.html" class="flex flex-col items-center bg-green-600 text-white p-4 rounded-xl active:scale-90 transition-transform">
+            <i class="fa-solid fa-house text-xl"></i>
+          </a>
+
+          <a href="#" class="flex flex-col items-center active:scale-90 transition-transform hover:text-green-600">
+            <i class="fa-solid fa-location-dot text-xl"></i>
+            <span class="text-xs">Location</span>
+          </a>
+
+          <a href="#" class="flex flex-col items-center active:scale-90 transition-transform hover:text-green-600">
+            <i class="fa-regular fa-heart text-xl"></i>
+            <span class="text-xs">Wishlist</span>
+          </a>
+
+          <a href="profil.html" class="flex flex-col items-center active:scale-90 transition-transform hover:text-green-600">
+            <i class="fa-regular fa-user text-xl"></i>
+            <span class="text-xs">Profile</span>
+          </a>
     </div>
 
  </footer>

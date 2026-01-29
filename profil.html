@@ -1,89 +1,104 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>profil</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
+   <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />   
+
+  </head>
+  <body>
     <main>
-         <div class="flex flex-col items-center h-100 justify-center gap-4 md:flex ">
-             <!-- src="https://i.pravatar.cc/100" -->
+      <div
+        class="flex flex-col items-center h-100 justify-center gap-4 md:flex"
+      >
+        <!-- src="https://i.pravatar.cc/100" -->
+        <img
+          src="/images/imgstory.webp"
+          class="w-20 h-20 rounded-full object-cover md:w-30 md:h-30"
+          alt="profile"
+        />
+
+        <div class="flex flex-col items-center">
+          <div class="flex items-center gap-4">
+            <h3 class="font-semibold text-gray-800">Ayoub Sofi</h3>
             <img
-                src="/images/imgstory.webp"
-                class="w-20 h-20 rounded-full object-cover md:w-30 md:h-30"
-                alt="profile"
+              class="affiche w-6 h-5"
+              src="/images/pencil.png"
+              alt="pen"
+              onclick="afficheForm()"
             />
-
-            <div class="flex flex-col items-center">
-               <div class="flex  items-center gap-4"><h3 class="font-semibold text-gray-800">Ayoub Sofi</h3> <img class="affiche w-6 h-5" src="/images/pencil.png" alt="pen" onclick="afficheForm()"></div> 
-                <p class="text-sm text-gray-500">Frontend Developer</p>
-            </div>
-            <div class="form max-w-md mx-auto bg-white p-6 rounded-xl shadow  hidden ">
-                <h2 class="text-lg font-semibold mb-4">Edit Profile</h2>
-                <form class="">
-                    <div>
-                    <label class="block text-sm text-gray-600 mb-1">Full Name</label>
-                    <input
-                        type="text"
-                        placeholder="Ayoub Sofi"
-                        class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 "
-                    />
-                    </div>
-
-                    <div>
-                    <label class="block text-sm text-gray-600 mb-1">Email</label>
-                    <input
-                        type="email"
-                        placeholder="ayoub@email.com"
-                        class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    />
-                    </div>
-
-                    <button
-                    class="w-full bg-blue-500 text-white py-2 mt-2 rounded-lg hover:bg-blue-600">
-                    Save Changes
-                    </button>
-                </form>
-            </div>
+          </div>
+          <p class="text-sm text-gray-500">Frontend Developer</p>
         </div>
-        
+        <div
+          class="form max-w-md mx-auto bg-white p-6 rounded-xl shadow hidden"
+        >
+          <h2 class="text-lg font-semibold mb-4">Edit Profile</h2>
+          <form class="">
+            <div>
+              <label class="block text-sm text-gray-600 mb-1">Full Name</label>
+              <input
+                type="text"
+                placeholder="Ayoub Sofi"
+                class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+            </div>
 
+            <div>
+              <label class="block text-sm text-gray-600 mb-1">Email</label>
+              <input
+                type="email"
+                placeholder="ayoub@email.com"
+                class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+            </div>
+
+            <button
+              class="w-full bg-blue-500 text-white py-2 mt-2 rounded-lg hover:bg-blue-600"
+            >
+              Save Changes
+            </button>
+          </form>
+        </div>
+      </div>
     </main>
-    <footer class="fixed bottom-0 left-0 right-0 w-full rounded-full bg-white shadow-t-lg py-2  ">
-    <div class="footer flex items-center justify-around">
-        <div class="bg-green-600 rounded-[10px]">
-            <a class="flex flex-col items-center" href="index.html">
-                <img class="w-13 p-4" src="/images/home.png" alt="home">
-            </a>
-             
-        </div>
-       
-        <div class="location ">
-            <a href="#" class="flex flex-col items-center"><img class="w-6 h-6" src="/images/icons8-location-50.png" alt="location"></a>
-            <p>location</p>
-        </div>
-        <div class="wishlist">
-            <a href="#"  class="flex flex-col items-center"><img class="w-6 h-6" src="/images/wishlist.png" alt="wishlist"></a>
-            Wishlist
-        </div>
-        <div class="profile">
-           <a href="profil.html"  class="flex flex-col items-center"><img class="w-6 h-6" src="/images/user.png" alt="wishlist"></a> 
-           Profile
-        </div>
-    </div>
+    <footer
+      class="fixed bottom-0 left-0 right-0 w-full rounded-full bg-white shadow-t-lg py-2"
+    >
+      <div class="footer flex items-center justify-around">
+        <a href="index.html" class="flex flex-col items-center bg-green-600 text-white p-4 rounded-xl active:scale-90 transition-transform">
+            <i class="fa-solid fa-house text-xl"></i>
+          </a>
 
- </footer>
-   
-<script> 
-const affiche=document.querySelector('.affiche');
-const form=document.querySelector('.form');
+          <a href="#" class="flex flex-col items-center active:scale-90 transition-transform hover:text-green-600">
+            <i class="fa-solid fa-location-dot text-xl"></i>
+            <span class="text-xs">Location</span>
+          </a>
 
-    function afficheForm(){     
-        form.style.display='block';
-    }
-</script>
-</body>
+          <a href="#" class="flex flex-col items-center active:scale-90 transition-transform hover:text-green-600">
+            <i class="fa-regular fa-heart text-xl"></i>
+            <span class="text-xs">Wishlist</span>
+          </a>
+
+          <a href="profil.html" class="flex flex-col items-center active:scale-90 transition-transform hover:text-green-600">
+            <i class="fa-regular fa-user text-xl"></i>
+            <span class="text-xs">Profile</span>
+          </a>
+      </div>
+    </footer>
+
+    <script>
+      const affiche = document.querySelector(".affiche");
+      const form = document.querySelector(".form");
+
+      function afficheForm() {
+        form.style.display = "block";
+      }
+    </script>
+  </body>
 </html>
