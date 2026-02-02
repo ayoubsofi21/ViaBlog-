@@ -8,21 +8,19 @@
      <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />   
+    >   
 </head>
 <body>
 
 
- <header>
-    <section class="header-container m-4  flex justify-between   px-4 md:px-12">
+ <header class="header-container m-4  flex justify-between   px-4 md:px-12">
         <div class="menu w-4 h-4 md:w-10 md:h-10"><a href="#"><img src="images/menu.png" alt=""></a></div>
         <div class="recherche w-4 h-4 md:w-10 md:h-10"><a href="#"><img src="images/search.png" alt=""></a></div>
-    </section>
  </header>
-
  <main class="main m-4 h-[110vh]">
-    <h1 class="title text-2xl mt-2 mb-2 md:ml-12">Blogger Of The Week</h1>
-        <section class="story flex gap-4 overflow-x-auto w-full p-4 md:justify-between">
+     <h1 class="title text-2xl mt-2 mb-2 md:ml-12">Blogger Of The Week</h1>
+     <article class="story flex gap-4 overflow-x-auto w-full p-4 md:justify-between">
+         <h2 class="sr-only">Blogger Of The Week</h2>
              <div class="user w-15 h-15 rounded-full shrink-0 md:w-26 md:h-26  md:m-5 ">
                 <img class="picture w-14 h-14 rounded-full border-2 border-green-400  md:w-20 md:h-20 md:flex " src="/images/imgstory.webp" alt="story1">
                 <p class="w-4 c-red">josefina Hudson
@@ -54,43 +52,42 @@
                 </p>
             </div>
             
-            
-                
-             
-        </section>
-    <h2 class="Read m-4 md:text-2xl md:m-10 ">What Do You Want To Read?</h2>
-    <section class="card-container flex items-center justify-around gap-3  overflow-x-auto">
-        <div class="card1 w-12  h-9  rounded-lg bg-green-600 flex justify-center items-center md:w-30 md:h-12">
+        </article>
+    <p class="Read m-4 md:text-2xl md:m-10 ">What Do You Want To Read?</p>
+    <section class="cardContainer flex items-center justify-around gap-3 overflow-x-auto">
+          <h2 class="sr-only">Categories</h2>
+       <button class="card1 w-12  h-9  rounded-lg bg-green-600 flex justify-center items-center md:w-30 md:h-12">
             <p class="text-white p-4">All</p>
         </div>
-        <div class="card1 w-12  h-9 p-4  rounded-lg border-1 flex justify-center items-center  md:w-30 md:h-12">
+       <button class="card1 w-12  h-9 p-4  rounded-lg border-1 flex justify-center items-center  md:w-30 md:h-12">
             <p>Forest</p>
         </div>
         
-        <div class="card1 w-12  h-9 p-4  rounded-lg border-1 flex justify-center items-center  md:w-30 md:h-12">
+       <button class="card1 w-12  h-9 p-4  rounded-lg border-1 flex justify-center items-center  md:w-30 md:h-12">
             <p> Beach</p>
         </div>
        
-        <div class="card1 w-12  h-9 p-4  rounded-lg border-1 flex justify-center items-center  md:w-30 md:h-12">
+       <button class="card1 w-12  h-9 p-4  rounded-lg border-1 flex justify-center items-center  md:w-30 md:h-12">
             <p>  River </p>
         </div>
-        <div class="card1 w-20  h-9 p-4  rounded-lg border-1 flex justify-center items-center  md:w-30 md:h-12">
+       <button class="card1 w-20  h-9 p-4  rounded-lg border-1 flex justify-center items-center  md:w-30 md:h-12">
             <p> Mountains</p>
         </div>
-        <div class="card1 w-20  h-9 p-4  rounded-lg border-1 flex justify-center items-center  md:w-30 md:h-12">
+       <button class="card1 w-20  h-9 p-4  rounded-lg border-1 flex justify-center items-center  md:w-30 md:h-12">
             <p>Road</p>
         </div>
         
     </section>
-    <section class="allbody rounded-b-[10px] shadow-sm rounded-t-[20px] w-[100%]">
+    <article class="allbody rounded-b-[10px] shadow-sm rounded-t-[20px] w-[100%]">
+        <h2 class="sr-only">hello</h2>
         <div class="imghome mt-4">
             <a href="details.html">
             <img class="rounded-t-[15px] md:w-full" src="https://static.vecteezy.com/system/resources/thumbnails/049/855/328/small/nature-background-high-resolution-wallpaper-for-a-serene-and-stunning-view-photo.jpg" alt="image-home">
             </a>
         </div>
         <div class="localClockkm flex  justify-between m-2">
-            <div class="font-bold">Yellow River</div>
-            <section class="flex justify-between text-red items-center gap-4">
+            <h2>Yellow River</h2>
+            <div class="flex justify-between text-red items-center gap-4">
                 <div class="flex justify-between  items-center ">
                     <img src="images/location.png" class="w-3 h-3 " alt="location"><p class="text-gray-500">china</p>
                 </div>
@@ -103,18 +100,18 @@
                
                 
                 
-            </section>
+            </div>
         </div>
         <p class="p-2">by lan Jacobson</p>
-    </section>
-    <section class="flex gap-1 relative mt-2 ">
+    </article>
+    <div class="flex gap-1 relative mt-2 ">
         <img class="w-45 h-50 rounded-t-[15px] md:h-70 md:w-full" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMgv22lTX2EbquPv5G0b6M8tnJ-y1GPkGxNw&s" alt="img">
         <img  class="w-45 h-50 rounded-t-[15px] md:h-70 md:w-full"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6szDKxK_Q87UB1WPu6iB-hPPczhxN_NlbKA&s" alt="img">
-          <section class="uploads absolute top-2 right-0  w-27 h-27  bg-green-400 rounded-full flex flex-col items-center justify-center md:top-10">
+          <div class="uploads absolute top-2 right-0  w-27 h-27  bg-green-400 rounded-full flex flex-col items-center justify-center md:top-10">
             <img  class="w-20 h-20" src="/images/upload.png" alt="uploadsImg">
-            <p class="text-white font-bold flex flex-col items-center justify-center">Upload</p>
-          </section>
-    </section>
+            <p class="text-white font-bold flex flex-col items-center justify-center">Upload<p>
+            </div>
+        </div>
     
  </main>
  <footer class="fixed bottom-0 left-0 right-0 w-full rounded-full bg-white shadow-t-lg py-2  ">
