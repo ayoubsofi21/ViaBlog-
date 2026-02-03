@@ -55,34 +55,49 @@
         </article> -->
         <div class="article flex justify-between items-center">
             <p class="Read m-4 md:text-2xl md:m-10 ">What Do You Want To Read?</p>
-            <button class="addButton bg-blue-500 text-white  rounded-full w-14  h-6 items-center justify-center cursor-pointer hover:scale-105 transition">add +</button>
+            <button  class="addButton bg-blue-500 text-white  rounded-full w-14  h-6 items-center justify-center cursor-pointer hover:scale-105 transition">add +</button>
             
         </div>
-        <form class="border-2 border-gray-300 p-6 rounded-lg max-w-md mx-auto mt-10 bg-white shadow-md">
-                   <h1 class="text-2xl font-bold mb-4">Ajouter une Destination</h1>
-                       <label for="Titre" class="block text-gray-700 font-medium mb-1">Titre<label>
-                     <input type="text" id="Titre" placeholder="Enter Title" class="w-full border border-gray-300 rounded-md px-3 py-2 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-400">
-                    <label for="Dates"  class="block text-gray-700 font-medium mb-1 " >Dates</label>
-                    <input type="date" class="Dates block text-gray-700 font-medium mb-1" placeholder="Enter Dates">
-                    <label for="Note" class="Note block text-gray-700 font-medium mb-1">Note</label>
-                    <select name="number" id="number" class="border border-gray-300 w-full rounded focus:ring-blue-400">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                    </select>
-                    <label for="form-control" class="block">Categories</label>
-                    <select name="number" id="number" class=" border border-gray-300  rounded w-full px-3 py-1 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-400">
-                        <option>Forest</option>
-                        <option>River</option>
-                    </select>
-    
-                <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                </div>
-                    <button type="submit" class="flex justify-center btn bg-blue-500 py-2 px-6 rounded-full text-white font-xl">Submit</button>
+        <form class="form-content border-2 border-gray-300 p-6 rounded-lg mt-10 bg-white shadow-md max-w-md mx-auto mb-2" style="display: none;">
+            <h1 class="text-2xl font-bold mb-4">Ajouter une Destination</h1>
+
+            <label for="Titre" class="block text-gray-700 font-medium mb-1">Titre</label>
+            <input type="text" id="Titre"
+                class="w-full rounded-md px-3 py-2 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-400">
+
+            <label for="Dates" class="block text-gray-700 font-medium mb-1">Dates</label>
+            <input type="date"
+                class="w-full rounded-md px-3 py-2 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-400">   
+             <label for="Image" class="block text-gray-700 font-medium mb-1">Image</label>
+            <input type="image"
+                class="w-full rounded-md px-3 py-2 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-400">
+            <label for="number" class="block mb-1">Note</label>
+            <select id="number"
+                class="w-full rounded-md px-3 py-2 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-400">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+
+            <label class="block mb-1">Categories</label>
+            <select
+                class="w-full rounded-md px-3 py-2 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-400">
+                <option>Forest</option>
+                <option>River</option>
+            </select>
+
+            <div class="flex items-center mb-4">
+                <input type="checkbox" id="exampleCheck1" class="mr-2">
+                <label for="exampleCheck1">Check me out</label>
+            </div>
+
+            <button type="submit"
+                class="bg-blue-500 py-2 px-6 rounded-full text-white">
+                Submit
+            </button>
         </form>
+
     <section class="cardContainer flex items-center justify-around gap-3 overflow-x-auto">
           <h2 class="sr-only">Categories</h2>
        <button class="card1 w-12  h-9  rounded-lg bg-green-600 flex justify-center items-center md:w-30 md:h-12">
@@ -111,20 +126,21 @@
         <h2 class="sr-only">hello</h2>
         <div class="imghome mt-4">
             <a href="details.html">
-            <img class="rounded-t-[15px] md:w-full" src="https://static.vecteezy.com/system/resources/thumbnails/049/855/328/small/nature-background-high-resolution-wallpaper-for-a-serene-and-stunning-view-photo.jpg" alt="image-home">
+            <img class="imgTrip rounded-t-[15px] md:w-full" 
+            alt="image-home">
             </a>
         </div>
         <div class="localClockkm flex  justify-between m-2">
-            <h2>Yellow River</h2>
+            <h2 class="Title">Yellow River</h2>
             <div class="flex justify-between text-red items-center gap-4">
                 <div class="flex justify-between  items-center ">
-                    <img src="images/location.png" class="w-3 h-3 " alt="location"><p class="text-gray-500">china</p>
+                    <img src="images/location.png" class="w-3 h-3 " alt="location"><p class="text-gray-500" class="pays">china</p>
                 </div>
                 <div class="flex justify-between items-center">
-                    <img src="images/clock.png" class="w-3 h-3 text-gray-500" alt="clock"><p class="text-gray-500">15 min</p>
+                    <img src="images/clock.png" class="w-3 h-3 text-gray-500" alt="clock"><p class="time text-gray-500">15 min</p>
                 </div>
                 <div class="flex justify-between items-center">
-                    <img src="images/eye.png" class="w-3 h-3 text-gray-500" alt="eye"><p class="text-gray-500">12K</p>
+                    <img src="images/eye.png" class="w-3 h-3 text-gray-500" alt="eye"><p class="kelometer text-gray-500">12K</p>
                 </div>
                
                 
