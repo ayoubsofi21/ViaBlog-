@@ -17,7 +17,7 @@
         <div class="menu w-4 h-4 md:w-10 md:h-10"><a href="#"><img src="images/menu.png" alt=""></a></div>
         <div class="recherche w-4 h-4 md:w-10 md:h-10"><a href="#"><img src="images/search.png" alt=""></a></div>
  </header>
- <main class="main m-4 h-[110vh]">
+ <main class="main m-4 h-[200vh]">
      <h1 class="title text-2xl mt-2 mb-2 md:ml-12">Blogger Of The Week</h1>
      <!-- <article class="story flex gap-4 overflow-x-auto w-full p-4 md:justify-between">
          <h2 class="sr-only">Blogger Of The Week</h2>
@@ -68,9 +68,10 @@
             <label for="Dates" class="block text-gray-700 font-medium mb-1">Dates</label>
             <input type="date"
                 class="w-full rounded-md px-3 py-2 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-400">   
-             <label for="Image" class="block text-gray-700 font-medium mb-1">Image</label>
-            <input type="image"
-                class="w-full rounded-md px-3 py-2 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-400">
+             <label for="image" class="block text-gray-700 font-medium mb-1">Image</label>
+            <input type="file" id="image" accept="image/*"
+                class="w-full rounded-md px-3 py-2 mb-4">
+
             <label for="number" class="block mb-1">Note</label>
             <select id="number"
                 class="w-full rounded-md px-3 py-2 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-400">
@@ -98,7 +99,7 @@
             </button>
         </form>
 
-    <section class="cardContainer flex items-center justify-around gap-3 overflow-x-auto">
+    <section class="cardContainer flex items-center justify-around gap-3 overflow-x-auto ">
           <h2 class="sr-only">Categories</h2>
        <button class="card1 w-12  h-9  rounded-lg bg-green-600 flex justify-center items-center md:w-30 md:h-12">
             <p class="text-white p-4">All</p>
@@ -122,34 +123,37 @@
         </div>
         
     </section>
-    <article class="allbody rounded-b-[10px] shadow-sm rounded-t-[20px] w-[100%]">
-        <h2 class="sr-only">hello</h2>
-        <div class="imghome mt-4">
-            <a href="details.html">
-            <img class="imgTrip rounded-t-[15px] md:w-full" 
-            alt="image-home">
-            </a>
-        </div>
-        <div class="localClockkm flex  justify-between m-2">
-            <h2 class="Title">Yellow River</h2>
-            <div class="flex justify-between text-red items-center gap-4">
-                <div class="flex justify-between  items-center ">
-                    <img src="images/location.png" class="w-3 h-3 " alt="location"><p class="pays text-gray-500" >china</p>
+    <section class="allArticle grid grid-cols-1 gap-3  justify-between items-center md:grid md:grid-cols-3 ">
+            <article class="allbody rounded-b-[10px] shadow-sm rounded-t-[20px]  w-full">
+                <h2 class="sr-only">hello</h2>
+                <div class="imghome mt-4">
+                    <a href="details.html">
+                    <img  class="imgTrip rounded-t-[15px] w-[100%] h-70" 
+                    alt="image-home">
+                    </a>
                 </div>
-                <div class="flex justify-between items-center">
-                    <img src="images/clock.png" class="w-3 h-3 text-gray-500" alt="clock"><p class="time text-gray-500">15 min</p>
-                </div>
-                <div class="flex justify-between items-center">
-                    <img src="images/eye.png" class="w-3 h-3 text-gray-500" alt="eye"><p class="kelometer text-gray-500">12K</p>
-                </div>
-               
-                
-                
-            </div>
-        </div>
-        <p class="p-2">by lan Jacobson</p>
+                <div class="localClockkm flex  justify-between m-2">
+                    <h2 class="Title">Yellow River</h2>
+                    <div class="flex justify-between text-red items-center gap-4">
+                        <div class="flex justify-between  items-center ">
+                            <img src="images/location.png" class=" w-3 h-3 " alt="location"><p class="note text-gray-500" >china</p>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <img src="images/eye.png" class="w-3 h-3 text-gray-500" alt="eye"><p class="kelometer text-gray-500">12K</p>
+                        </div>
+                        <div class="crudMenu flex justify-between items-center hover:bg-gray-200 rounded-full p-1">
+                            <!-- <i id="mncr" class="fa-solid fa-ellipsis"></i> -->
+                             <div class="crudMenu">⋮</div>
+                            <div class="mncr"></div>
 
-    </article>
+                        </div>
+                    </div>
+                </div>
+
+            </article>  
+             
+            
+    </section>
     
  </main>
  <footer class="fixed bottom-0 left-0 right-0 w-full rounded-full bg-white shadow-t-lg py-2  ">
