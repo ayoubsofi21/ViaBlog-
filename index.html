@@ -58,23 +58,23 @@
             <button  class="addButton bg-blue-500 text-white  rounded-full w-14  h-6 items-center justify-center cursor-pointer hover:scale-105 transition">add +</button>
             
         </div>
-        <form class="form-content border-2 border-gray-300 p-6 rounded-lg mt-10 bg-white shadow-md max-w-md mx-auto mb-2" style="display: none;">
+        <form id="form_content" class="border-2 border-gray-300 p-6 rounded-lg mt-10 bg-white shadow-md max-w-md mx-auto mb-2" style="display: none;">
             <h1 class="text-2xl font-bold mb-4">Ajouter une Destination</h1>
 
             <label for="Titre" class="block text-gray-700 font-medium mb-1">Titre</label>
-            <input type="text" id="Titre"
-                class="w-full rounded-md px-3 py-2 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-400">
+            <input type="text"   id="titre_name"
+                class="w-full border-1 rounded-md px-3 py-2 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-400">
 
             <label for="Dates" class="block text-gray-700 font-medium mb-1">Dates</label>
-            <input type="date"
-                class="w-full rounded-md px-3 py-2 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-400">   
+            <input type="date" id="Date"
+                class="w-full border-1 rounded-md px-3 py-2 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-400">   
              <label for="image" class="block text-gray-700 font-medium mb-1">Image</label>
             <input type="file" id="image" accept="image/*"
-                class="w-full rounded-md px-3 py-2 mb-4">
+                class="Image border-1 w-full rounded-md px-3 py-2 mb-4">
 
             <label for="number" class="block mb-1">Note</label>
             <select id="number"
-                class="w-full rounded-md px-3 py-2 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-400">
+                class="w-full border-1 rounded-md px-3 py-2 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-400">
                 <option>1</option>
                 <option>2</option>
                 <option>3</option>
@@ -82,8 +82,8 @@
             </select>
 
             <label class="block mb-1">Categories</label>
-            <select
-                class="w-full rounded-md px-3 py-2 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-400">
+            <select id="Category"
+                class="w-full border-1 rounded-md px-3 py-2 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-400">
                 <option>Forest</option>
                 <option>River</option>
             </select>
@@ -92,11 +92,16 @@
                 <input type="checkbox" id="exampleCheck1" class="mr-2">
                 <label for="exampleCheck1">Check me out</label>
             </div>
-
+        <div class="flex justify-between">
             <button type="submit"
                 class="bg-blue-500 py-2 px-6 rounded-full text-white">
                 Submit
             </button>
+            <button type="reset" id="resetbtn"
+                class="bg-blue-500 py-2 px-6 rounded-full text-white">
+                reset
+            </button>
+        </div>
         </form>
 
     <section class="cardContainer flex items-center justify-around gap-3 overflow-x-auto ">
@@ -123,7 +128,7 @@
         </div>
         
     </section>
-    <section class="allArticle grid grid-cols-1 gap-3  justify-between items-center md:grid md:grid-cols-3 ">
+    <section id="tripsContainer" class="allArticle grid grid-cols-1 gap-3  justify-between items-center md:grid md:grid-cols-3 ">
             <article class="allbody rounded-b-[10px] shadow-sm rounded-t-[20px]  w-full">
                 <h2 class="sr-only">hello</h2>
                 <div class="imghome mt-4">
@@ -133,10 +138,10 @@
                     </a>
                 </div>
                 <div class="localClockkm flex  justify-between m-2">
-                    <h2 class="Title">Yellow River</h2>
+                    <h2 class="title_of_default">Yellow River</h2>
                     <div class="flex justify-between text-red items-center gap-4">
                         <div class="flex justify-between  items-center ">
-                            <img src="images/location.png" class=" w-3 h-3 " alt="location"><p class="note text-gray-500" >china</p>
+                            <img src="images/location.png" class="w-3 h-3 " alt="location"><p class="note text-gray-500" >china</p>
                         </div>
                         <div class="flex justify-between items-center">
                             <img src="images/eye.png" class="w-3 h-3 text-gray-500" alt="eye"><p class="kelometer text-gray-500">12K</p>
@@ -151,6 +156,7 @@
                 </div>
 
             </article>  
+            
              
             
     </section>

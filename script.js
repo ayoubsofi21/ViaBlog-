@@ -1,8 +1,12 @@
 const addButton = document.querySelector(".addButton");
-const form = document.querySelector(".form-content");
 addButton.addEventListener("click", () => {
   form.style.display = "block";
 });
+const resetbtn = document.querySelector("#resetbtn");
+resetbtn.addEventListener("click", () => {
+  form.style.display = "none";
+});
+
 const array = [
   {
     id: 1,
@@ -59,49 +63,87 @@ const array = [
     Category: "Forest",
   },
 ];
+
 const imgTrip = document.querySelectorAll(".imgTrip");
-const Title = document.querySelectorAll(".Title");
-const note = document.querySelectorAll(".note");
+const title_default = document.querySelectorAll(".title_of_default");
+const noteTrip = document.querySelectorAll(".note");
 const kelometer = document.querySelectorAll(".kelometer");
 
-const h1 = document.querySelector("h1");
-function DisplayTrips() {
-  array.forEach((element, index) => {
-    Title[index].textContent = element.Title;
-    imgTrip[index].src = element.image;
-    note[index].textContent = element.note;
-    kelometer[index].textContent = element.date;
+// function displayTrips() {
+//   // Clear previous trips if needed (optional)
+//   // Or overwrite existing ones
+//   array.forEach((trip, index) => {
+//     if (title_default[index]) title_default[index].textContent = trip.Title;
+//     if (imgTrip[index])
+//       imgTrip[index].src = trip.image || "images/imgstory.webp";
+//     if (noteTrip[index]) noteTrip[index].textContent = trip.note;
+//     if (kelometer[index]) kelometer[index].textContent = trip.date;
+//   });
+// }
+
+// displayTrips();
+
+// i do this for avoied the repetition code html
+const tripsContainer = document.getElementById("tripsContainer");
+
+function displayTrips() {
+  tripsContainer.innerHTML = ""; 
+
+  array.forEach((trip) => {
+    const card = document.createElement("article");
+    card.className =
+      "allbody rounded-b-[10px] shadow-sm rounded-t-[20px] w-full";
+
+    card.innerHTML = `
+      <h2 class="sr-only">hello</h2>
+      <div class="imghome mt-4">
+        <a href="details.html">
+          <img src="${trip.image || "images/default.png"}" class="imgTrip rounded-t-[15px] w-[100%] h-70" alt="image-home">
+        </a>
+      </div>
+      <div class="localClockkm flex justify-between m-2">
+        <h2 class="title_of_default">${trip.Title}</h2>
+        <div class="flex justify-between text-red items-center gap-4">
+          <div class="flex justify-between items-center">
+            <img src="images/location.png" class="w-3 h-3" alt="location">
+            <p class="note text-gray-500">${trip.Category}</p>
+          </div>
+          <div class="flex justify-between items-center">
+            <img src="images/eye.png" class="w-3 h-3 text-gray-500" alt="eye">
+            <p class="kelometer text-gray-500">${trip.date}</p>
+          </div>
+          <div class="crudMenu flex justify-between items-center hover:bg-gray-200 rounded-full p-1">
+            <div class="crudMenu">⋮</div>
+            <div class="mncr"></div>
+          </div>
+        </div>
+      </div>
+    `;
+
+    tripsContainer.appendChild(card);
   });
 }
-DisplayTrips();
 
-// const crudMenu = document.querySelector(".crudMenu");
-// const mncr = document.querySelector("#mncr");
-// crudMenu.forEach((menu) => {
-//   menu.addEventListener("click", () => {
-//     const mncr = menu.nextElementSibling;
-//     mncr.textContent = "Delete";
-//     mncr.style.color = "red";
-//   });
-// });
+displayTrips();
 
-// create new trip
-const container = document.querySelector(".allArticle");
+let compteur = 0;
+const form = document.getElementById("form_content");
 form.addEventListener("submit", function (e) {
   e.preventDefault();
-  const title = document.getElementById("Titre").value;
+  const title = document.getElementById("titre_name").value;
   const date = document.getElementById("Date").value;
-  const image = document.getElementById("Image").value;
+  const image = document.querySelector(".Image").value;
   const note = document.getElementById("number").value;
   const category = document.getElementById("Category").value;
   const newTrip = {
-    id: Date.now(),
+    id: compteur++,
     Title: title,
     date: date,
-    image: "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=600",
+    image: image,
     note: note,
     Category: category,
   };
   array.push(newTrip);
-  DisplayTrips();
+  console.log(array);
+  displayTrips();
 });
