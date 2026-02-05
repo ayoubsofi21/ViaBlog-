@@ -2,67 +2,67 @@ const addButton = document.querySelector(".addButton");
 addButton.addEventListener("click", () => {
   form.style.display = "block";
 });
-const resetbtn = document.querySelector("#resetbtn");
-resetbtn.addEventListener("click", () => {
-  form.style.display = "none";
-});
+// const resetbtn = document.querySelector("#resetbtn");
+// resetbtn.addEventListener("click", () => {
+//   form.style.display = "none";
+// });
 
-const array = [
-  {
-    id: 1,
-    Title: "Trip in Newzelanda",
-    date: "12K",
-    image:
-      "https://images.unsplash.com/photo-1768854524297-44252dffae71?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDh8RnpvM3p1T0hONnd8fGVufDB8fHx8fA%3D%3D",
-    note: "hello",
-    Category: "Forest",
-  },
-  {
-    id: 2,
-    Title: "Trip in Newzelanda",
-    date: "12K",
-    image:
-      "https://plus.unsplash.com/premium_photo-1732569109951-e3a15dd4be9c?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDIyfEZ6bzN6dU9ITjZ3fHxlbnwwfHx8fHw%3D",
-    note: "hello",
-    Category: "Forest",
-  },
-  {
-    id: 3,
-    Title: "Trip in Newzelanda",
-    date: "12K",
-    image:
-      "https://plus.unsplash.com/premium_photo-1664367173121-2ef20faec859?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDM0fEZ6bzN6dU9ITjZ3fHxlbnwwfHx8fHw%3D",
-    note: "hello",
-    Category: "Forest",
-  },
-  {
-    id: 4,
-    Title: "Trip in Newzelanda",
-    date: "12K",
-    image:
-      "https://images.unsplash.com/photo-1768310481123-9c8e4e6fc61a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDQ5fEZ6bzN6dU9ITjZ3fHxlbnwwfHx8fHw%3D",
-    note: "hello",
-    Category: "Forest",
-  },
-  {
-    id: 5,
-    Title: "Trip in New Zealand",
-    date: "12K",
-    image:
-      "https://images.unsplash.com/photo-1768215592110-6283f76ac552?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDYwfEZ6bzN6dU9ITjZ3fHxlbnwwfHx8fHw%3D",
-    note: "hello",
-    Category: "Forest",
-  },
-  {
-    id: 6,
-    Title: "Mountain Escape",
-    date: "12k",
-    image:
-      "https://images.unsplash.com/photo-1768590237847-ebc94f180def?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDM3fEZ6bzN6dU9ITjZ3fHxlbnwwfHx8fHw%3D",
-    note: "hello",
-    Category: "Forest",
-  },
-];
+// const array = [
+//   {
+//     id: 1,
+//     Title: "Trip in Newzelanda",
+//     date: "12K",
+//     image:
+//       "https://images.unsplash.com/photo-1768854524297-44252dffae71?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDh8RnpvM3p1T0hONnd8fGVufDB8fHx8fA%3D%3D",
+//     note: "hello",
+//     Category: "Forest",
+//   },
+//   {
+//     id: 2,
+//     Title: "Trip in Newzelanda",
+//     date: "12K",
+//     image:
+//       "https://plus.unsplash.com/premium_photo-1732569109951-e3a15dd4be9c?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDIyfEZ6bzN6dU9ITjZ3fHxlbnwwfHx8fHw%3D",
+//     note: "hello",
+//     Category: "Forest",
+//   },
+//   {
+//     id: 3,
+//     Title: "Trip in Newzelanda",
+//     date: "12K",
+//     image:
+//       "https://plus.unsplash.com/premium_photo-1664367173121-2ef20faec859?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDM0fEZ6bzN6dU9ITjZ3fHxlbnwwfHx8fHw%3D",
+//     note: "hello",
+//     Category: "Forest",
+//   },
+//   {
+//     id: 4,
+//     Title: "Trip in Newzelanda",
+//     date: "12K",
+//     image:
+//       "https://images.unsplash.com/photo-1768310481123-9c8e4e6fc61a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDQ5fEZ6bzN6dU9ITjZ3fHxlbnwwfHx8fHw%3D",
+//     note: "hello",
+//     Category: "Forest",
+//   },
+//   {
+//     id: 5,
+//     Title: "Trip in New Zealand",
+//     date: "12K",
+//     image:
+//       "https://images.unsplash.com/photo-1768215592110-6283f76ac552?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDYwfEZ6bzN6dU9ITjZ3fHxlbnwwfHx8fHw%3D",
+//     note: "hello",
+//     Category: "Forest",
+//   },
+//   {
+//     id: 6,
+//     Title: "Mountain Escape",
+//     date: "12k",
+//     image:
+//       "https://images.unsplash.com/photo-1768590237847-ebc94f180def?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDM3fEZ6bzN6dU9ITjZ3fHxlbnwwfHx8fHw%3D",
+//     note: "hello",
+//     Category: "Forest",
+//   },
+// ];
 
 const imgTrip = document.querySelectorAll(".imgTrip");
 const title_default = document.querySelectorAll(".title_of_default");
@@ -87,7 +87,7 @@ const kelometer = document.querySelectorAll(".kelometer");
 const tripsContainer = document.getElementById("tripsContainer");
 
 function displayTrips() {
-  tripsContainer.innerHTML = ""; 
+  tripsContainer.innerHTML = "";
 
   array.forEach((trip) => {
     const card = document.createElement("article");
@@ -113,12 +113,33 @@ function displayTrips() {
             <p class="kelometer text-gray-500">${trip.date}</p>
           </div>
           <div class="crudMenu flex justify-between items-center hover:bg-gray-200 rounded-full p-1">
-            <div class="crudMenu">⋮</div>
-            <div class="mncr"></div>
           </div>
         </div>
       </div>
     `;
+    // const menuBtn = card.querySelector(".menuBtn");
+    // const menu = card.querySelector(".menu");
+    // const deleteBtn = card.querySelector(".deleteBtn");
+    // const updateBtn = card.querySelector(".updateBtn");
+
+    // menuBtn.addEventListener("click", () => {
+    //   menu.classList.toggle("hidden");
+    // });
+
+    // deleteBtn.addEventListener("click", () => {
+    //   array = array.filter((t) => t.id !== trip.id);
+    //   displayTrips();
+    // });
+
+    // updateBtn.addEventListener("click", () => {
+    //   editId = trip.id;
+    //   form.style.display = "block";
+
+    //   document.getElementById("titre_name").value = trip.Title;
+    //   document.getElementById("Date").value = trip.date;
+    //   document.getElementById("number").value = trip.note;
+    //   document.getElementById("Category").value = trip.Category;
+    // });
 
     tripsContainer.appendChild(card);
   });
@@ -126,7 +147,7 @@ function displayTrips() {
 
 displayTrips();
 
-let compteur = 0;
+let compteur = 2;
 const form = document.getElementById("form_content");
 form.addEventListener("submit", function (e) {
   e.preventDefault();

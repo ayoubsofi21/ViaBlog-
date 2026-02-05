@@ -19,7 +19,7 @@
  </header>
  <main class="main m-4 h-[200vh]">
      <h1 class="title text-2xl mt-2 mb-2 md:ml-12">Blogger Of The Week</h1>
-     <!-- <article class="story flex gap-4 overflow-x-auto w-full p-4 md:justify-between">
+     <article class="story flex gap-4 overflow-x-auto w-full p-4 md:justify-between">
          <h2 class="sr-only">Blogger Of The Week</h2>
              <div class="user w-15 h-15 rounded-full shrink-0 md:w-26 md:h-26  md:m-5 ">
                 <img class="picture w-14 h-14 rounded-full border-2 border-green-400  md:w-20 md:h-20 md:flex " src="/images/imgstory.webp" alt="story1">
@@ -52,11 +52,10 @@
                 </p>
             </div>
             
-        </article> -->
+        </article>
         <div class="article flex justify-between items-center">
             <p class="Read m-4 md:text-2xl md:m-10 ">What Do You Want To Read?</p>
-            <button  class="addButton bg-blue-500 text-white  rounded-full w-14  h-6 items-center justify-center cursor-pointer hover:scale-105 transition">add +</button>
-            
+            <button  class="addButton hidden bg-blue-500 text-white  rounded-full w-14  h-6 items-center justify-center cursor-pointer hover:scale-105 transition">add +</button>
         </div>
         <form id="form_content" class="border-2 border-gray-300 p-6 rounded-lg mt-10 bg-white shadow-md max-w-md mx-auto mb-2" style="display: none;">
             <h1 class="text-2xl font-bold mb-4">Ajouter une Destination</h1>
@@ -146,12 +145,20 @@
                         <div class="flex justify-between items-center">
                             <img src="images/eye.png" class="w-3 h-3 text-gray-500" alt="eye"><p class="kelometer text-gray-500">12K</p>
                         </div>
-                        <div class="crudMenu flex justify-between items-center hover:bg-gray-200 rounded-full p-1">
-                            <!-- <i id="mncr" class="fa-solid fa-ellipsis"></i> -->
-                             <div class="crudMenu">⋮</div>
-                            <div class="mncr"></div>
+                        
+                             <div class="relative">
+                                <button class="menuBtn text-xl px-2">⋮</button>
 
-                        </div>
+                                <div class="menu hidden absolute right-0 top-6 bg-gray-700 text-white rounded shadow-md w-28">
+                                    <button class="updateBtn block w-full text-left px-3 py-2 hover:bg-gray-600">
+                                    Update
+                                    </button>
+                                    <button class="deleteBtn block w-full text-left px-3 py-2 hover:bg-red-600">
+                                    Delete
+                                    </button>
+                                </div>
+                            </div>
+               
                     </div>
                 </div>
 
